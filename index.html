@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubliCity Day Fast - Ropa, Zapatos y Electrónicos Modernos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1a1a1a, #000);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #00d4ff;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #00d4ff;
+            color: #000;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.08);
+            background: #00b8ff;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #111;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffdd00;
+        }
+
+        footer {
+            padding: 40px 20px;
+            background: #000;
+            margin-top: 60px;
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .cta-button { padding: 12px 30px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PubliCity Day Fast</h1>
+        <p class="subtitle">Ropa • Zapatos • Electrónicos • Todo lo moderno que necesitas ¡Ofertas locas!</p>
+        <a href="#productos" class="cta-button">Ver Productos Destacados ↓</a>
+    </header>
+
+    <div class="container" id="productos">
+        <div class="categories">
+
+            <!-- Ropa -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ropa moderna">
+                <div class="card-content">
+                    <h2>Ropa Trendy</h2>
+                    <p>Polos, hoodies, jeans, chaquetas urbanas y más. Estilo 2025 garantizado.</p>
+                    <div class="price">Desde $19.99</div>
+                </div>
+            </div>
+
+            <!-- Zapatos -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Zapatos deportivos">
+                <div class="card-content">
+                    <h2>Zapatos & Sneakers</h2>
+                    <p>Sneakers limited edition, botas, zapatillas running y casual. Comodidad + estilo.</p>
+                    <div class="price">Desde $39.99</div>
+                </div>
+            </div>
+
+            <!-- Electrónicos -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/5082576/pexels-photo-5082576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gadgets electrónicos">
+                <div class="card-content">
+                    <h2>Electrónicos Top</h2>
+                    <p>Auriculares inalámbricos, smartwatches, cargadores rápidos, audífonos y más gadgets.</p>
+                    <div class="price">Desde $24.99</div>
+                </div>
+            </div>
+
+            <!-- Combo / Más productos -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Accesorios y mix">
+                <div class="card-content">
+                    <h2>Accesorios & Más</h2>
+                    <p>Gorras, mochilas, fundas, luces LED, power banks y todo lo que complementa tu estilo.</p>
+                    <div class="price">Desde $9.99</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>PubliCity Day Fast © 2026 | Ofertas reales por tiempo limitado • Envíos rápidos • Compra segura</p>
+        <p>¡Síguenos para más descuentos diarios!</p>
+    </footer>
+
+</body>
+</html>
